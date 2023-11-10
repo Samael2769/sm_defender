@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Road
   - Green
+  - Enemy
   layers:
   - Default
   - TransparentFX
