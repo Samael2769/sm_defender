@@ -84,6 +84,12 @@ public class MapGenerator : MonoBehaviour
             Debug.Log("Game Over");
             Sm_SceneManager.LoadScene(0);
         }
+
+        if (_currentWave == wave_number && _currentEnemy == wave_size - 1 && _enemies.Count == 0 && Settings.isInfinite == false)
+        {
+            Debug.Log("You win");
+            Sm_SceneManager.LoadScene(0);
+        }
     }
 
     public bool isInPos(float mx, float my, float msize, float x, float y)
